@@ -1,0 +1,20 @@
+#
+# ~/.gitconfig
+#
+
+[user]
+    name = Qiuwen \"Owen\" Fan
+    email = fanqiuwen@gmail.com
+
+[core]
+    autocrlf = input
+    safecrlf = true
+
+[alias]
+    co = checkout
+    cm = commit
+    st = status
+    br = branch
+    lg = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    type = cat-file -t
+    dump = cat-file -p

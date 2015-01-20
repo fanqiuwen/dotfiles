@@ -1,0 +1,58 @@
+#
+# ~/.config/i3status/config
+#
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 5
+}
+
+order += "disk /"
+order += "run_watch VPN"
+order += "wireless wlp2s0"
+order += "ethernet eno1"
+order += "cpu_temperature 0"
+order += "cpu_usage"
+order += "load"
+order += "tztime local"
+
+disk "/" {
+        format = "%avail"
+}
+
+run_watch VPN {
+        pidfile = "/var/run/vpnc/pid"
+}
+
+wireless wlp2s0 {
+        format_up = "W: (%quality at %essid) %ip"
+        format_down = "W: down"
+}
+
+ethernet eno1 {
+        format_up = "E: %ip"
+        format_down = "E: down"
+}
+
+cpu_temperature 0 {
+        format = "%degreesC"
+}
+
+cpu_usage {
+        format = "%usage"
+}
+
+load {
+        format = "%1min"
+}
+
+tztime local {
+        format = "%m/%d %I:%M%p"
+}

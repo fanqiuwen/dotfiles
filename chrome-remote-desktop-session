@@ -1,0 +1,9 @@
+#
+# ~/.chrome-remote-desktop-session
+#
+
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+
+setxkbmap -layout us -variant colemak
+
+exec i3
