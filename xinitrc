@@ -8,7 +8,7 @@ xset r 66
 numlockx &
 
 xflux -z 15217 &
-xautolock -time 10 -locker lockx &
+xautolock -time 30 -locker lockx &
 /home/fanqiuwen/.dropbox-dist/dropboxd &
 
 export GTK_IM_MODULE=fcitx
