@@ -2,7 +2,7 @@
 ! ~/.Xresources
 !
 
-xterm*faceName: Inconsolata:size=14
+xterm*faceName: Inconsolata for Powerline:size=14
 xterm*faceNameDoublesize: WenQuanYi Micro Hei
 
 !! drop in Solarized colorscheme for Xresources/Xdefaults

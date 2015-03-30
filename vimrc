@@ -57,7 +57,7 @@ if has("gui_running")
     set go-=m
     set go-=r
     set go-=T
-    set guifont=Inconsolata\ 14
+    set guifont=Inconsolata\ for\ Powerline\ 14
 endif
 
 " behavior

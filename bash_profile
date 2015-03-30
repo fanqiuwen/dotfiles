@@ -5,4 +5,4 @@
 [[ -f ~/.bashrc ]] && . ~/.bashrc
 
 # Activate numlock
-[[ -z "${SSH_CONNECTION}" ]] && setleds -D +num
+[[ -z "${SSH_CONNECTION}${TMUX}" ]] && setleds -D +num
