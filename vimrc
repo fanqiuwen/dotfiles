@@ -69,6 +69,7 @@ set ignorecase
 set smartcase
 set nowrap
 set backspace=indent,eol,start
+set mouse=a
 
 " coding style
 set cc=80
