@@ -72,7 +72,7 @@ if has("gui_running")
     set guioptions-=T
     set guioptions-=L
     set guioptions-=r
-    set guifont=Inconsolata\ for\ Powerline\ 14
+    set guifont=Inconsolata\ for\ Powerline:h16
 endif
 
 " behavior
