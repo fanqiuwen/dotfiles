@@ -15,6 +15,8 @@ Plugin 'edkolev/tmuxline.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 call vundle#end()
 
 " - solarized
