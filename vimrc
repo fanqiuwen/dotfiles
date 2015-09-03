@@ -17,6 +17,7 @@ Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-sleuth'
 call vundle#end()
 
 " - solarized
@@ -86,9 +87,6 @@ set cc=80
 set tw=79
 set autoindent
 filetype plugin indent on
-set expandtab
-set shiftwidth=4
-set softtabstop=4
 
 " filetype-specific
 autocmd filetype python nmap <f8> :w \| :!python2 %<cr>
