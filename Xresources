@@ -8,6 +8,7 @@ xterm*faceNameDoublesize: WenQuanYi Micro Hei
 xterm*locale: true
 xterm*metaSendsEscape: true
 xterm*selectToClipboard: true
+xterm*scrollBar: false
 xterm*termName: xterm-256color
 
 !! drop in Solarized colorscheme for Xresources/Xdefaults

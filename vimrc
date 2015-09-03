@@ -77,6 +77,9 @@ if has("gui_running")
     set go-=T
     set guifont=Inconsolata\ for\ Powerline\ 14
 endif
+if $COLORTERM == "gnome-terminal" || $TERM == "screen"
+    set t_Co=256
+endif
 
 " behavior
 set nobackup
