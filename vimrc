@@ -93,8 +93,7 @@ set softtabstop=4
 " filetype-specific
 autocmd filetype python nmap <f8> :w \| :!python2 %<cr>
 autocmd filetype python imap <f8> <esc><f8>
-autocmd filetype c nmap <f8> :w \| :!gcc -Wall -Wextra -Werror -std=c99 -pedantic -g % && ./a.out<cr>
-autocmd filetype c imap <f8> <esc><f8>
+autocmd filetype c setlocal tw=72
 autocmd filetype tex nmap <f8> :w<cr><Leader>ll
 autocmd filetype tex imap <f8> <esc><f8>
 autocmd filetype tex setlocal wrap
