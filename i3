@@ -158,6 +158,6 @@ bar {
 focus_follows_mouse no
 for_window [class="Gvim"] border 1pixel
 for_window [class="Zathura"] border 1pixel
-for_window [class="Google-chrome"] border 1pixel
+for_window [class="google-chrome"] border 1pixel
 for_window [title="Hangouts"] floating enable, border none
 bindsym --release $mod+Shift+w exec lockx
