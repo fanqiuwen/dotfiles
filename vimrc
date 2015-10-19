@@ -45,6 +45,9 @@ nmap <leader>7 <Plug>AirlineSelectTab7
 nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 
+" - nerdtree
+let NERDTreeIgnore=['\.pyc$','\.dep$','\.o$']
+
 " - latex-suite
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
@@ -83,6 +86,7 @@ set smartcase
 set nowrap
 set backspace=indent,eol,start
 set mouse=a
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.o,*.a,*.dep
 
 " coding style
 set cc=80
