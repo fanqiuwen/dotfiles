@@ -7,7 +7,7 @@
 xset r 66
 numlockx &
 
-xflux -z 15217 &
+xflux -z 94087 &
 xautolock -time 30 -locker lockx &
 /home/fanqiuwen/.dropbox-dist/dropboxd &
 
