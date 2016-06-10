@@ -72,6 +72,7 @@ set lazyredraw
 if has("gui_running")
     set go-=m
     set go-=r
+    set go-=L
     set go-=T
     set guifont=Inconsolata\ for\ Powerline\ 14
 endif
