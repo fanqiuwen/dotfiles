@@ -156,8 +156,8 @@ bar {
 }
 
 focus_follows_mouse no
-for_window [class="Gvim"] border 1pixel
-for_window [class="Zathura"] border 1pixel
-for_window [class="google-chrome"] border 1pixel
-for_window [title="Hangouts"] floating enable, border none
+for_window [class="Gvim"] border pixel 2
+for_window [class="Zathura"] border pixel 2
+for_window [class="google-chrome"] border pixel 2
+for_window [window_role="pop-up"] floating enable, border normal
 bindsym --release $mod+Shift+w exec lockx
