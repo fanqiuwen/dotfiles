@@ -5,6 +5,7 @@
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 xset r 66
+xbindkeys
 numlockx &
 
 xflux -z 15217 &
