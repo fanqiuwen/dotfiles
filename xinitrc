@@ -8,7 +8,7 @@ xset r 66
 xbindkeys
 numlockx &
 
-xflux -z 15217 &
+redshift &
 xautolock -time 30 -locker lockx &
 /home/fanqiuwen/.dropbox-dist/dropboxd &
 
