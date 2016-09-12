@@ -97,11 +97,11 @@ set autoindent
 filetype plugin indent on
 
 " filetype-specific
-autocmd filetype python nmap <f8> :w \| :!python2 %<cr>
-autocmd filetype python imap <f8> <esc><f8>
+autocmd filetype python nmap <f4> :w \| :!python2 %<cr>
+autocmd filetype python imap <f4> <esc><f4>
 autocmd filetype c setlocal tw=72
-autocmd filetype tex nmap <f8> :w<cr><Leader>ll
-autocmd filetype tex imap <f8> <esc><f8>
+autocmd filetype tex nmap <f4> :w<cr><Leader>ll
+autocmd filetype tex imap <f4> <esc><f4>
 autocmd filetype tex setlocal wrap
 autocmd filetype tex setlocal tw=0
 autocmd filetype tex nmap j gj
