@@ -10,6 +10,14 @@ xterm*metaSendsEscape: true
 xterm*selectToClipboard: true
 xterm*termName: xterm-256color
 
+URxvt.fading: 10
+URxvt*letterSpace: -2
+URxvt*scrollBar: false
+URxvt*scrollTtyOutput: false
+URxvt*scrollWithBuffer: true
+URxvt*scrollTtyKeypress: true
+URxvt*font: xft:Inconsolata:size=14,xft:Inconsolata\ for\ Powerline:size=14,xft:WenQuanYi Micro Hei
+
 !! drop in Solarized colorscheme for Xresources/Xdefaults
 
 !!SOLARIZED HEX     16/8 TERMCOL  XTERM/HEX   L*A*B      RGB         HSB
@@ -55,35 +63,43 @@ xterm*fadeColor:             S_base03
 xterm*cursorColor:           S_base1
 xterm*pointerColorBackground:S_base01
 xterm*pointerColorForeground:S_base1
-
-!! black dark/light
 xterm*color0:                S_base02
 xterm*color8:                S_base03
-
-!! red dark/light
 xterm*color1:                S_red
 xterm*color9:                S_orange
-
-!! green dark/light
 xterm*color2:                S_green
 xterm*color10:               S_base01
-
-!! yellow dark/light
 xterm*color3:                S_yellow
 xterm*color11:               S_base00
-
-!! blue dark/light
 xterm*color4:                S_blue
 xterm*color12:               S_base0
-
-!! magenta dark/light
 xterm*color5:                S_magenta
 xterm*color13:               S_violet
-
-!! cyan dark/light
 xterm*color6:                S_cyan
 xterm*color14:               S_base1
-
-!! white dark/light
 xterm*color7:                S_base2
 xterm*color15:               S_base3
+
+URxvt*background:            S_base03
+URxvt*foreground:            S_base00
+URxvt*fading:                40
+URxvt*fadeColor:             S_base03
+URxvt*cursorColor:           S_base1
+URxvt*pointerColorBackground:S_base01
+URxvt*pointerColorForeground:S_base1
+URxvt*color0:                S_base02
+URxvt*color8:                S_base03
+URxvt*color1:                S_red
+URxvt*color9:                S_orange
+URxvt*color2:                S_green
+URxvt*color10:               S_base01
+URxvt*color3:                S_yellow
+URxvt*color11:               S_base00
+URxvt*color4:                S_blue
+URxvt*color12:               S_base0
+URxvt*color5:                S_magenta
+URxvt*color13:               S_violet
+URxvt*color6:                S_cyan
+URxvt*color14:               S_base1
+URxvt*color7:                S_base2
+URxvt*color15:               S_base3
