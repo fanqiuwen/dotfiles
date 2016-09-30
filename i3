@@ -150,6 +150,7 @@ for_window [class="Gvim"] border pixel 2
 for_window [class="Zathura"] border pixel 2
 for_window [class="google-chrome"] border pixel 2
 for_window [window_role="pop-up"] floating enable, border normal
+for_window [instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] floating disable, border normal
 
 # kill focused window
 bindsym $mod+Shift+q kill
