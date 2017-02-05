@@ -20,6 +20,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-sleuth'
+Plugin 'ledger/vim-ledger'
 call vundle#end()
 
 " - solarized

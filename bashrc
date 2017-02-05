@@ -9,6 +9,7 @@ PS1='\[\e[0;36m\][\u@\h \W]\$ \[\e[0m\]'
 eval `dircolors ~/.dircolors`
 
 source /usr/bin/virtualenvwrapper.sh
+source ~/ledger/aliases
 
 alias gnomeghc='Xnest -geometry 1280x800 :1& DISPLAY=:1 ssh -Y ghc gnome-session'
 alias ls='ls --color=auto'
