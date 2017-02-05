@@ -2,9 +2,6 @@
 # ~/.bash_profile
 #
 
-PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin"
+PATH="$HOME/.local/bin:$PATH:$(ruby -e 'print Gem.user_dir')/bin"
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
-
-# Activate numlock
-[[ -z "${SSH_CONNECTION}${TMUX}" ]] && setleds -D +num
