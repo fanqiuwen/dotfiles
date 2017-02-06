@@ -20,4 +20,8 @@ dropboxd &
 redshift &
 xautolock -time 30 -locker lockx &
 
+# start gpg-agent and use it as an ssh agent
+gpg-connect-agent /bye
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+
 exec i3
