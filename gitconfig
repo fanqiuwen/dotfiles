@@ -3,7 +3,7 @@
 #
 
 [user]
-    name = Qiuwen \"Owen\" Fan
+    name = Owen Fan
     email = fanqiuwen@gmail.com
 
 [core]
@@ -16,6 +16,6 @@
     cm = commit
     st = status
     br = branch
-    lg = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    lg = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
     type = cat-file -t
     dump = cat-file -p
