@@ -12,10 +12,12 @@
     safecrlf = true
 
 [alias]
-    co = checkout
-    cm = commit
-    st = status
     br = branch
+    cm = commit
+    co = checkout
+    di = diff
+    ds = diff --staged
     lg = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit
-    type = cat-file -t
-    dump = cat-file -p
+    st = status
+    amend = commit --amend
+    amendamend = commit --amend --no-edit
