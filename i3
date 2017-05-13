@@ -9,7 +9,34 @@
 set $mod Mod4
 floating_modifier $mod
 focus_follows_mouse no
-font pango:DejaVu Sans Mono 8
+
+# appearance
+font pango:Inconsolata 11
+new_window pixel 1
+new_float pixel 1
+
+# colors based on http://ethanschoonover.com/solarized
+# class			ttl_bdr	backgrd	text	indictr	border
+client.focused		#268bd2	#268bd2	#fdf6e3	#2aa198	#268bd2
+client.focused_inactive	#073642	#073642	#839496	#2aa198	#586e75
+client.unfocused	#002b36	#002b36	#839496	#2aa198	#073642
+client.urgent		#dc322f	#dc322f	#fdf6e3	#2aa198	#dc322f
+
+# i3bar for workspaces and i3status
+bar {
+        separator_symbol "|"
+        status_command i3status
+
+        colors {
+                background #000000
+                statusline #839496
+                # class			border	backgrd	text
+                focused_workspace	#268bd2	#268bd2	#fdf6e3
+                active_workspace	#073642	#073642	#839496
+                inactive_workspace	#000000	#000000	#839496
+                urgent_workspace	#dc322f	#dc322f	#fdf6e3
+        }
+}
 
 # change focus
 bindsym $mod+h focus left
@@ -82,11 +109,6 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-# i3bar for workspaces and i3status
-bar {
-        status_command i3status
-}
-
 # i3 shortcuts
 bindsym $mod+Shift+q kill
 bindsym --release $mod+Shift+w exec lockx
@@ -101,8 +123,5 @@ bindsym $mod+Shift+r exec pkill -USR1 redshift
 bindsym $mod+Shift+n exec google-chrome-stable --incognito
 
 # application settings
-for_window [class="Gvim"] border pixel 2
-for_window [class="Zathura"] border pixel 2
-for_window [class="Google-chrome"] border pixel 2
-for_window [window_role="pop-up"] floating enable, border normal
-for_window [instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] floating disable, border normal
+for_window [window_role="pop-up"] floating enable
+for_window [instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] floating disable

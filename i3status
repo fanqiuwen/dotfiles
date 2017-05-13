@@ -10,11 +10,10 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = true
+        colors = false
         interval = 5
 }
 
-order += "run_watch VPN"
 order += "wireless wlp2s0"
 order += "ethernet eno1"
 order += "disk /"
@@ -26,18 +25,14 @@ disk "/" {
         format = "%avail"
 }
 
-run_watch VPN {
-        pidfile = "/var/run/vpnc/pid"
-}
-
 wireless wlp2s0 {
         format_up = "W: (%quality at %essid) %ip"
-        format_down = "W: down"
+        format_down = ""
 }
 
 ethernet eno1 {
         format_up = "E: %ip"
-        format_down = "E: down"
+        format_down = ""
 }
 
 cpu_usage {
