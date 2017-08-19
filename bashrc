@@ -8,6 +8,10 @@
 PS1='\[\e[0;36m\][\u@\h \W]\$ \[\e[0m\]'
 eval `dircolors ~/.dircolors`
 
+HISTCONTROL=ignoredups:erasedups
+shopt -s histappend
+PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND"
+
 source ~/ledger/aliases
 
 alias ls='ls --color=auto'
