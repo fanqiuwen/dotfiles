@@ -12,8 +12,8 @@ focus_follows_mouse no
 
 # appearance
 font pango:Inconsolata 11
-new_window pixel 1
-new_float pixel 1
+new_window pixel 2
+new_float pixel 2
 
 # colors based on http://ethanschoonover.com/solarized
 # class			ttl_bdr	backgrd	text	indictr	border
@@ -74,6 +74,17 @@ bindsym $mod+t layout tabbed
 bindsym $mod+d layout toggle split
 bindsym $mod+Shift+x floating toggle
 
+workspace 1 output DP-5
+workspace 2 output DP-5
+workspace 3 output DP-5
+workspace 4 output DP-5
+workspace 5 output DP-5
+workspace 6 output DP-4
+workspace 7 output DP-4
+workspace 8 output DP-4
+workspace 9 output DP-4
+workspace 10 output DP-4
+
 # switch to workspace
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
@@ -109,6 +120,12 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+# passthrough
+mode "passthrough" {
+        bindsym $mod+Escape mode "default"
+}
+bindsym $mod+Escape mode "passthrough"
+
 # i3 shortcuts
 bindsym $mod+Shift+q kill
 bindsym --release $mod+Shift+w exec lockx
@@ -124,4 +141,3 @@ bindsym $mod+Shift+n exec google-chrome-stable --incognito
 
 # application settings
 for_window [window_role="pop-up"] floating enable
-for_window [instance="crx_nckgahadagoaajjgafhacjanaoiihapd"] floating disable

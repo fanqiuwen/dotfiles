@@ -14,7 +14,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
+Plugin 'mhinz/vim-signify'
 Plugin 'ledger/vim-ledger'
 Plugin 'tpope/vim-sleuth'
 Plugin 'VundleVim/Vundle.vim'
@@ -57,7 +57,9 @@ let NERDTreeRespectWildIgnore=1
 
 " - YouCompleteMe
 set completeopt=menu,preview
+let g:ycm_auto_hover=''
 let g:ycm_autoclose_preview_window_after_insertion=1
+nnoremap <leader>fix :YcmCompleter FixIt<cr>
 
 " appearance
 colorscheme solarized

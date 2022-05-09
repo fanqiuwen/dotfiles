@@ -12,13 +12,13 @@ xterm*termName: xterm-256color
 
 URxvt*fading: 10
 URxvt*font: xft:Inconsolata for Powerline:size=14,xft:WenQuanYi Micro Hei
-URxvt*letterSpace: -2
+URxvt*letterSpace: -1
 URxvt*scrollBar: false
 URxvt*scrollTtyKeypress: true
 URxvt*scrollTtyOutput: false
 URxvt*scrollWithBuffer: true
 
-URxvt*perl-ext-common: default,keyboard-select,url-select
+URxvt*perl-ext-common: default,keyboard-select,selection-to-clipboard,url-select
 URxvt*keysym.M-Escape: perl:keyboard-select:activate
 URxvt*keysym.M-s: perl:keyboard-select:search
 URxvt*keysym.M-u: perl:url-select:select_next

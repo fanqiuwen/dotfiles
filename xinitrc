@@ -2,6 +2,7 @@
 # ~/.xinitrc
 #
 
+[[ -f ~/.profile ]] && . ~/.profile
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # keyboard settings
