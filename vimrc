@@ -7,18 +7,14 @@ set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
-Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'edkolev/tmuxline.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'tpope/vim-fugitive'
 Plugin 'mhinz/vim-signify'
 Plugin 'ledger/vim-ledger'
 Plugin 'tpope/vim-sleuth'
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 
 " - airline
@@ -40,26 +36,9 @@ nmap <leader>7 <Plug>AirlineSelectTab7
 nmap <leader>8 <Plug>AirlineSelectTab8
 nmap <leader>9 <Plug>AirlineSelectTab9
 
-" - ctrlp
-let g:ctrlp_use_caching=0
-let g:ctrlp_user_command='ag %s --ignore-case --nocolor --nogroup
-    \ --filename-pattern ""
-    \ --ignore "*.a"
-    \ --ignore "*.dep"
-    \ --ignore "*.o"
-    \ --ignore "*.pyc"
-    \ --ignore "*.so"
-    \ --ignore "*.swp"'
-
 " - nerdtree
 set wildignore=*.a,*.dep,*.o,*.pyc,*.so,*.swp
 let NERDTreeRespectWildIgnore=1
-
-" - YouCompleteMe
-set completeopt=menu,preview
-let g:ycm_auto_hover=''
-let g:ycm_autoclose_preview_window_after_insertion=1
-nnoremap <leader>fix :YcmCompleter FixIt<cr>
 
 " appearance
 colorscheme solarized

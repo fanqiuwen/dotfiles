@@ -21,3 +21,6 @@
     st = status
     amend = commit --amend
     amendamend = commit --amend --no-edit
+
+[receive]
+    denyCurrentBranch = updateInstead
