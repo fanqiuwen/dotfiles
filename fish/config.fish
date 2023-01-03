@@ -16,4 +16,7 @@ if status is-interactive
   if test -n "$SSH_CLIENT" -a -z "$TMUX" && command -q tmux
     exec tmux new-session -A -s ssh
   end
+
+  # Enable colorized ls
+  set -x CLICOLOR 1
 end
