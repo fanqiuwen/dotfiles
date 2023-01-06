@@ -12,8 +12,8 @@ focus_follows_mouse no
 
 # appearance
 font pango:Inconsolata 11
-new_window pixel 2
-new_float pixel 2
+default_border pixel 2
+default_floating_border pixel 2
 
 # colors based on http://ethanschoonover.com/solarized
 # class			ttl_bdr	backgrd	text	indictr	border
@@ -74,16 +74,16 @@ bindsym $mod+t layout tabbed
 bindsym $mod+d layout toggle split
 bindsym $mod+Shift+x floating toggle
 
-workspace 1 output DP-5
-workspace 2 output DP-5
-workspace 3 output DP-5
-workspace 4 output DP-5
-workspace 5 output DP-5
-workspace 6 output DP-4
-workspace 7 output DP-4
-workspace 8 output DP-4
-workspace 9 output DP-4
-workspace 10 output DP-4
+workspace 1 output DP-4.8
+workspace 2 output DP-4.8
+workspace 3 output DP-4.8
+workspace 4 output DP-4.8
+workspace 5 output DP-4.8
+workspace 6 output DP-5.8
+workspace 7 output DP-5.8
+workspace 8 output DP-5.8
+workspace 9 output DP-5.8
+workspace 10 output DP-5.8
 
 # switch to workspace
 bindsym $mod+1 workspace 1
@@ -128,7 +128,7 @@ bindsym $mod+Escape mode "passthrough"
 
 # i3 shortcuts
 bindsym $mod+Shift+q kill
-bindsym --release $mod+Shift+w exec lockx
+bindsym --release $mod+Shift+w exec slock
 bindsym $mod+Shift+f exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 bindsym $mod+Shift+p restart
 bindsym $mod+Shift+g reload

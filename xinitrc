@@ -5,24 +5,17 @@
 [[ -f ~/.profile ]] && . ~/.profile
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
-# keyboard settings
-numlockx
-xset r 66
-xbindkeys
-
 # input method
+setxkbmap us -variant colemak
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 fcitx &
 
 # launch some programs
-dropboxd &
 redshift &
-xautolock -time 30 -locker lockx &
+xautolock -time 30 -locker slock &
 
-# start gpg-agent and use it as an ssh agent
-gpg-connect-agent updatestartuptty /bye
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+xrandr --output DP-4.8 --pos 0x400 --output DP-5.8 --rotate left --pos 2560x0
 
 exec i3
