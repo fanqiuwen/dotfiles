@@ -1,0 +1,11 @@
+privacy: {
+  export_from_git5: true
+  export_from_local: true
+
+  exclude_command: "cd"
+  exclude_command: "git"
+  exclude_command: "hg"
+  exclude_command: "ls"
+  exclude_command: "vim"
+}
+user_consents_to_publishing_history: true
