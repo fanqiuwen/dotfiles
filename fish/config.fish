@@ -3,7 +3,7 @@ if status is-interactive
   # forwarded ssh-agent, use gpg-agent as ssh-agent.
   set -l ssh_auth_sock "$HOME/.ssh/ssh_auth_sock"
   if test "$SSH_AUTH_SOCK" != $ssh_auth_sock
-    if test -n "$SSH_AUTH_SOCK"
+    if test -n "$SSH_AUTH_SOCK"; and not string match -q "*com.apple.launchd*" "$SSH_AUTH_SOCK"
       ln -sf $SSH_AUTH_SOCK $ssh_auth_sock
       set -x SSH_AUTH_SOCK $ssh_auth_sock
     else if command -q gpg
