@@ -1,0 +1,5 @@
+theme = Builtin Solarized Dark
+font-family = Inconsolata
+font-size = 18
+window-height = 70
+window-width = 140
