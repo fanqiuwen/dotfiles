@@ -10,7 +10,7 @@ call vundle#begin()
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'lifepillar/vim-solarized8'
 Plugin 'mhinz/vim-signify'
 Plugin 'ledger/vim-ledger'
 Plugin 'tpope/vim-sleuth'
@@ -41,8 +41,9 @@ set wildignore=*.a,*.dep,*.o,*.pyc,*.so,*.swp
 let NERDTreeRespectWildIgnore=1
 
 " appearance
-colorscheme solarized
+set termguicolors
 set background=dark
+colorscheme solarized8
 set nowrap
 set number
 set showcmd
