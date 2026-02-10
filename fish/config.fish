@@ -1,6 +1,11 @@
 if status is-interactive
-  # Enable colorized ls for macOS.
-  set -x CLICOLOR 1
+  fish_config theme choose my
+  set --global fish_key_bindings fish_vi_key_bindings
+
+  # Enable colorized ls
+  if test -f ~/.dircolors
+    eval (dircolors -c ~/.dircolors | sed 's/> / /g')
+  end
 
   # Symlink ssh-agent socket to a static location for tmux. If not using a
   # forwarded ssh-agent, use gpg-agent as ssh-agent.
